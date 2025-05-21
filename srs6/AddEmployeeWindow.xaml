@@ -1,0 +1,15 @@
+﻿<!-- AddEmployeeWindow.xaml -->
+<Window x:Class="srs6.AddEmployeeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Employee" Height="200" Width="300">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Name:" />
+            <TextBox Name="txtName" />
+            <TextBlock Text="Position:" />
+            <TextBox Name="txtPosition" />
+            <Button Content="Add Employee" Click="btnAddEmployee_Click" />
+        </StackPanel>
+    </Grid>
+</Window>

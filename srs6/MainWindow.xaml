@@ -1,0 +1,16 @@
+﻿<!-- MainWindow.xaml -->
+<Window x:Class="srs6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Main Window" Height="350" Width="525">
+    <Grid>
+        <DataGrid Name="dataGridEmployees" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" />
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}" />
+                <DataGridTextColumn Header="Position" Binding="{Binding Position}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Add Employee" Click="btnAddEmployee_Click" VerticalAlignment="Bottom" />
+    </Grid>
+</Window>
